@@ -1,0 +1,47 @@
+﻿<DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Book App</title>
+        <link rel="stylesheet" type="text/css" href="Content/Site.css">
+        <link rel="stylesheet" type="text/css" href="Content/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="Content/bootstrap-theme.min.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="box1">
+                <h3>All Books</h3>
+                <h4>Id__________Title_______Genre_______Year</h4>
+                <ul id="bookList" class="list-group" />
+            </div>
+            <div class="box2">
+                <h3>Search by Id</h3>
+                <input type="text" id="SearchId" size="15" />
+                <input type="button" value="Search" class="btn btn-info" onclick="find();" />
+                <h3>Edit a Book</h3>
+                Title: <input type="text" id="editTitle" size="25" /><br />
+                Genre: <input type="text" id="editGenre" size="25" /> <br />
+                Year: <input type="text" id="editYear" size="25" /> <br />
+                <input type="button" value="Update" class="btn btn-primary" onclick="updateItem();" />
+            </div>
+
+            <div class="box3">
+                <h3>Delete a Book by Id</h3>
+                <input type="text" id="deleteId" size="15" />
+                <input type="button" value="Delete" class="btn btn-danger" onclick="deleteItem();" />
+            </div>
+
+            <div class="box4">
+                <h3>Add a Book</h3>
+                Title: <input type="text" id="newTitle" size="25" /><br />
+                Genre: <input type="text" id="newGenre" size="25" /> <br />
+                Year: <input type="text" id="newYear" size="25" /> <br />
+                <input type="button" value="Add New" class="btn btn-primary" onclick="addItem();" />
+            </div>
+        </div>
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="Scripts/main.js"></script>
+    </body>
+</html>
+
